@@ -1,16 +1,17 @@
 body{
-    background-image: url(../IMG/egghead.jpg);
-    bac
+    background-image: url(../IMG/fundo.jpeg);
+    
 }
 
 nav {
-    background-color: #333;
+    background-color: rgb(104, 104, 104);
     padding: 10px;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 li {
     display: inline;
@@ -19,4 +20,65 @@ li {
 a {
     color: white;
     text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: (78,78,78);
+    padding: 3% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    
+  }
+  
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .logo img{
+    width: 100%;
+    max-width: 15%;
+    height: auto;
+  }
+  .cabecalho{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p{
+    line-height:1.5;
+    font-size:1.2em ;
+    text-align: justify;
+  }
+
+.caixa-imagem{
+    text-align: center;
+    margin-top: 1%;
 }
