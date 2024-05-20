@@ -6,8 +6,22 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width:100%;
+    background-color: #ffffff;
+    height: 500px; 
+  }
   
-}
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 li {
   display: inline;
   margin-right: 10px;
@@ -17,10 +31,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
 header {
   background-color: (78,78,78);
@@ -36,12 +46,10 @@ header {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   display: flex;
-
 }
-
 nav ul li {
   margin-right: 20px;
   
@@ -53,8 +61,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+border-radius: 5px;
 }
+nav .logo a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
 
 .logo img{
   width: 100%;
@@ -79,12 +102,18 @@ p{
 }
 
 body{
-margin: 0;
-padding: 0;
-
+margin: auto;
+padding: 3%;
 background-image: url(../IMG/fundo.jpg);
 background-size: cover;
 background-repeat: no-repeat;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+height: 100vh;
+padding-right: 3%;
+background-color: #f0f0f0;
 }
 
 h1 {
@@ -132,15 +161,6 @@ a:hover {
   max-width: 100%;
   height: auto; 
 }
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh;
-  padding-right: 20px;
-  background-color: #f0f0f0;
-}
 
 
 table {
@@ -181,4 +201,18 @@ table {
 .styled-table tbody tr:hover {
   background-color: #f1f1f1;
   cursor: pointer;
+}
+ aside{
+  background-color: #ffffff;
+  padding: 4%;
+  height: auto;
+  margin: auto;
+ }
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
